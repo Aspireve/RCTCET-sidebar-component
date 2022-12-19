@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
+
+
+:root {
+  --grey: #f6f6f6;
+  --blueblack: #2d1d3d;
+  --bordergrey: #e0dfe1;
+  --hovergrey: #949494;
+  --lightgreen: #5ea18f;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(268 23% 24% / 0.5);
+  border-radius: 7.5px;
+  border: 3.5px solid transparent; 
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transition: 500ms;
+  background: hsl(268 23% 24% / 1);
+  border: 2.5px solid transparent; 
+  background-clip: content-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fraunces', 'serif';
+}
+
+.SideBarSlide {
+  position: absolute;
+  width: 350px;
+  height: 100vh;
+  background-color: var(--grey);
+  z-index: 1;
+}
+
+
+.CrossAndLogo {
+  margin: 30px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.XMark {
+  height: 25px;
+  width: 25px;
+  padding: 10px 7px;
+}
+
+.XMark:hover {
+  opacity: 0.5;
+  transition: 5ms;
+}
+
+.LogoName {
+  line-height: 56px;
+  font-size: 40px;
+  padding: 10px 7px;
+  color: var(--blueblack);
+}
+
+.menuList {
+  max-height: 55%;
+  max-width: 100%;
+  direction: rtl;
+  overflow-y: overlay;
+}
+
+.menuItems {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid var(--bordergrey);
+  text-decoration: none;
+  direction: ltr;
+  color: var(--blueblack);
+}
+
+.menuItems:hover {
+  color: var(--grey);
+  background-color: var(--hovergrey);
+  transition: 500ms;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 28px;
+  padding: 10px;
+  margin: 0px 10px 0px 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-overflow:ellipsis;
+  white-space: noWrap;
+}
+
+.textArrow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.active {
+  transition: 500ms;
+  color: var(--lightgreen);
+}
+
+.rotate {
+  transition-duration: 500ms;
+  transform: translateY(0%) rotate(+180deg);
+
+}
+
+.socialImage {
+  height: 35px;
+  width: 35px;
+  padding: 10px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}

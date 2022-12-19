@@ -1,0 +1,31 @@
+:root{
+  --grey: #f6f6f6;
+  --blueblack: #2d1d3d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .MenuButton{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  .BurgerButton{
+    height: 30px;
+    width: 30px;
+    color: var(--grey);
+    padding: 20px;
+    border: 2px solid var(--grey);
+  }
+
+  .BurgerButton:hover{
+    background-color: var(--grey);
+    color: var(--blueblack);
+  }
